@@ -33,8 +33,6 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-
-
         fun useRegex(input: String): Boolean{
             var p: Pattern = Pattern.compile("[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]")
             var m: Matcher = p.matcher(input)

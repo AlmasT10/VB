@@ -104,12 +104,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             )
         }
 
-
-
-
 //               nearByPlace("restaurant")
-
-
 
     }
 
