@@ -103,8 +103,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 Looper.myLooper()!!
             )
         }
+            binding.fltBtn2.setOnClickListener {
+                nearByPlace("restaurant")
+            }
 
-//               nearByPlace("restaurant")
 
     }
 
