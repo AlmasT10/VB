@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PaymentFragment">
+
+    <TextView
+        android:id="@+id/card_no_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/credit_card_number"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        />
+
+    <EditText
+        android:id="@+id/credit_card_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="number"
+        android:maxLength="16"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_no_label"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:hint="xxxx-xxxx-xxxx-xxxx" />
+
+    <TextView
+        android:id="@+id/expiry_date_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credit_card_text"
+        android:layout_marginStart="50dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="50dp"
+        />
+
+    <EditText
+        android:id="@+id/expiry_date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginVertical="10dp"
+        android:inputType="date"
+        android:background="@drawable/custom_input"
+       android:padding="10dp"
+        android:layout_marginEnd="50dp"
+        android:maxLength="16"
+        android:minHeight="48dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expiry_date_label"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:hint="MM/DD/YYYY" />
+
+    <Button
+        android:id="@+id/save_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expiry_date_text"
+        android:layout_marginVertical="50dp"
+        android:text="@string/save"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
